@@ -8,11 +8,16 @@ import Password from '../pages/Password/Password';
 
 import Drawers from './menu.routes';
 
-const LoginStack = createStackNavigator();
+const Stack = createStackNavigator();
 
 export default function LoginStacks() {
     return (
-        <LoginStack.Navigator screenOptions={{headerStyle: {backgroundColor: '#820606'}, headerTintColor:'#FFF', headerTitleAlign:'center'}}>
-        </LoginStack.Navigator>
+        <Stack.Navigator initialRouteName={Login} screenOptions={{headerStyle: 
+            {backgroundColor: '#820606'}, headerTintColor:'#FFF', headerTitleAlign:'center'}}>
+            <Stack.Screen name="Login" component={Login} options={{ title: 'Faça seu Login' }}/>
+            <Stack.Screen name="Menu" component={Drawers}options={{ title: '', headerLeft:false}}/>
+            <Stack.Screen name="Password" component={Password}options={{ title: 'REDEFINIR SENHA' ,headerLeft:false}}/>
+            <Stack.Screen name="Sign_up" component={Sign_up}options={{ title: 'CADASTRE'}}/>
+        </Stack.Navigator>
     );
 }

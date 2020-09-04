@@ -16,3 +16,12 @@ export const Form = styled.View`
     border-radius:10px;
     margin-top:50px;
 `;
+export const TouchableOpacity = styled.TouchableOpacity`
+    top:550px;
+    background-color: #115037;
+    align-items:center;
+    width:90%;
+    padding: 15px 50px;
+    border-radius:10px;
+    position:absolute; 
+`;

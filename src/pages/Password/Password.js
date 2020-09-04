@@ -2,7 +2,7 @@ import React , {useState}from 'react';
 import Alert from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {KeyboardAvoidingView, ImageProfile, TextInput, SubTitle, Title, Button, TitleButton, Form} from '../../components/Styles_Password';
 
 import user from './../../assets/user.png';
@@ -33,7 +33,8 @@ export default function Password(){
                         placeholderTextColor="#999"
                         autoCapitalize="none"
                         name="email"
-                        autoCorrect={false}></TextInput>
+                        autoCorrect={false}
+                        leftIcon={<Icon name="envelope"/>}></TextInput>
                         <Button  onPress={showAlert}>
                             <TitleButton>ENVIAR</TitleButton>
                         </Button>

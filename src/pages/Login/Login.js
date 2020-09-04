@@ -1,7 +1,7 @@
 import React , {useState}from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
-import {Alert} from 'react-native';
+import {Alert, Input} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import {KeyboardAvoidingView, ImageProfile, TextInput, SubTitle,
@@ -39,11 +39,10 @@ export default function Login({ navigation }){
                         autoCapitalize="none"
                         name="email"
                         onChangeText={setEmail}
-                        autoCorrect={false}
-                        OIcon={<Icon name="envelope" size={18} colors="#999"/>}>
-                          
+                        autoCorrect={false}>                          
                         </TextInput>
 
+                          
                         <SubTitle>SENHA *</SubTitle>
                         <TextInput type="senha"
                         placeholder="Digite sua senha ..."
@@ -58,10 +57,8 @@ export default function Login({ navigation }){
                         </Button>
                         
                     </Form>
-                    <SubText onPress={()=> navigation.navigate('Order')}>teste</SubText>
                     <SubText onPress={()=> navigation.navigate('Password')}> X Esqueci a senha</SubText>
                     <RegTitle onPress={()=> navigation.navigate('Sign_up')}>CADASTRE-SE</RegTitle>
-                    
                     </KeyboardAvoidingView>
                 </ScrollView>
         </LinearGradient>

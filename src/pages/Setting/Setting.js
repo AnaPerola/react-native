@@ -3,8 +3,8 @@ import { View } from 'react-native';
 
 // import { Container } from './styles';
 
-const Profile = () => {
+const Setting = () => {
   return <View />;
 }
 
-export default Profile;
+export default Setting;
