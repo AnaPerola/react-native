@@ -8,9 +8,9 @@ import Avatar from './../../assets/avatar.png';
 export default function CustomDrawer(props){
   return (
         <DrawerContentScrollView {...props}>
-
-            <Container  icon={({color,size}) => (
-                <MaterialCommunityIcons name="reorder-horizontal" color={color}size={size} style={{ marginTop:5}}/>)}
+            <Container  icon={() => (
+                <MaterialCommunityIcons name="reorder-horizontal" color={'#ccc'}size={100} 
+                style={{ marginTop:100}}/>)}
                 onPress={()=>{}}>  
                 <ContainerImage>
                     <AvatarImage source={Avatar}/>

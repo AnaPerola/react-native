@@ -2,16 +2,26 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
     flex: 1;
+
 `;
 
 export const ContainerImage = styled.View`
     padding-left:20px;
     padding: 5px;
 `;
-
+export const Button = styled.TouchableOpacity`
+    top:550px;
+    background-color: #115037;
+    align-items:center;
+    width:90%;
+    padding: 15px 50px;
+    border-radius:10px;
+    position:absolute; 
+`;
 export const AvatarImage = styled.Image`
     height: 100px;
     width: 100px;
+
 `;
 export const Title = styled.Text`
     margin-top:20px;

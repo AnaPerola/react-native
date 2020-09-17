@@ -1,22 +1,23 @@
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import {KeyboardAvoidingView, AvatarImage, Form, Button, ContainerHearder} from './../../components/Styles_Menu';
-import { ScrollView } from 'react-native-gesture-handler';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Avatar from './../../assets/avatar.png';
+import {KeyboardAvoidingView, Button, Title, Scroll} from './../../components/Styles_Menu';
+import { FontAwesome } from '@expo/vector-icons'; 
 
+import Carousel from './../../components/Carousel/Carousels';
+import {dummyData} from './../../data/Data'
 export default function Menu({ navigation }){
 
-    return (
+    return (       
         <LinearGradient     
             colors={['#820606','#280101']}
             style={{flex:1, justifyContent: 'center', width:'100%', alignItems:'center'}}>
-
-            <ScrollView>
-                    <KeyboardAvoidingView behavior='padding' >
-                    </KeyboardAvoidingView>
-            </ScrollView>
+            <Scroll>
+                <KeyboardAvoidingView behavior='padding' >
+                    <Button onPress={()=> navigation.navigate("CarouselItem")}>
+                        <Title>TESTE</Title>
+                    </Button>
+                </KeyboardAvoidingView>
+            </Scroll>
         </LinearGradient>
-
     )
 }
