@@ -39,8 +39,7 @@ export default function Login({ navigation }){
                         autoCapitalize="none"
                         name="email"
                         onChangeText={setEmail}
-                        autoCorrect={false}>                          
-                        </TextInput>
+                        autoCorrect={false}/>
 
                           
                         <SubTitle>SENHA *</SubTitle>
@@ -51,7 +50,7 @@ export default function Login({ navigation }){
                         autoCorrect={false}
                         name="Password"
                         onChangeText={setPassword}
-                        secureTextEntry={true}></TextInput>
+                        secureTextEntry={true}/>
                         <Button onPress={navigationToMenu}>
                             <TitleButton>LOGIN</TitleButton>
                         </Button>
