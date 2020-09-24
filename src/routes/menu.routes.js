@@ -1,5 +1,6 @@
 import React from 'react'
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createDrawerNavigato } from '@react-navigation/drawer';
+import { create }
 
 import Menu from './../pages/Menu/Menu';
 import Profile from './../pages/Profile/Profile';
@@ -22,5 +23,9 @@ export default function Drawers(){
                 <Drawer.Screen name="Setting" component={Setting}></Drawer.Screen>
                 <Drawer.Screen name="Recent" component={Recent}></Drawer.Screen>
         </Drawer.Navigator>
+
+        <Stack.Navigatior>
+
+        </Stack.Navigatior>
         )
 }

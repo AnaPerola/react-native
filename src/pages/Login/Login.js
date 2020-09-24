@@ -1,11 +1,10 @@
 import React , {useState}from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
-import {Alert, Input} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {Alert} from 'react-native';
+import { MaterialIcons , AntDesign} from '@expo/vector-icons'; 
 
-import {KeyboardAvoidingView, ImageProfile, TextInput, SubTitle,
-     Button, TitleButton, SubText, RegTitle, Form} from '../../components/Styles_Login';
+import {ContainerScroll, ButtonIcon, ButtonIcons,KeyboardAvoidingView, ImageProfile, TextInput, 
+    ButtonNavigation, TitleButton, SubTitle, Title, Form} from '../../components/Styles_Login';
 
 import user from './../../assets/user.png';
 
@@ -18,7 +17,7 @@ export default function Login({ navigation }){
         console.log(email);
         console.log(password);
         if (email == "ana@hotmail.com"&& password =="123456") {
-            Alert.alert("Login efetuado com Sucesso!", navigation.navigate('Menu'));
+            navigation.navigate('Menu');
         }else {
             Alert.alert("ERRO", "Email ou Senha Invalidos!");
         }
@@ -28,38 +27,43 @@ export default function Login({ navigation }){
     return (
         <LinearGradient colors={['#820606','#280101']}
             style={{flex:1, justifyContent: 'center', alignItems:'center', width:400 }}>
-                <ScrollView>
-                    <KeyboardAvoidingView behavior='padding' >
-                    <ImageProfile source={user}/>
-                    <Form>
-                        <SubTitle>E-MAIL *</SubTitle>
-                        <TextInput type="text"
-                        placeholder="email@example.com"
-                        placeholderTextColor="#999"
-                        autoCapitalize="none"
-                        name="email"
-                        onChangeText={setEmail}
-                        autoCorrect={false}/>
+            <ContainerScroll>
+                <KeyboardAvoidingView behavior='padding' >
+                <ImageProfile source={user}/>
+                <Form>
+                    <TextInput type="text"
+                    placeholder="        email@example.com"
+                    placeholderTextColor="#999"
+                    autoCapitalize="none"
+                    name="email"
+                    onChangeText={setEmail}
+                    autoCorrect={false}/>
+                    <ButtonIcon>
+                        <MaterialIcons name="email"  size={25} color="#820606"/>
+                    </ButtonIcon>
 
-                          
-                        <SubTitle>SENHA *</SubTitle>
-                        <TextInput type="senha"
-                        placeholder="Digite sua senha ..."
-                        placeholderTextColor="#999"
-                        autoCapitalize="none"
-                        autoCorrect={false}
-                        name="Password"
-                        onChangeText={setPassword}
-                        secureTextEntry={true}/>
-                        <Button onPress={navigationToMenu}>
-                            <TitleButton>LOGIN</TitleButton>
-                        </Button>
-                        
-                    </Form>
-                    <SubText onPress={()=> navigation.navigate('Password')}> X Esqueci a senha</SubText>
-                    <RegTitle onPress={()=> navigation.navigate('Sign_up')}>CADASTRE-SE</RegTitle>
-                    </KeyboardAvoidingView>
-                </ScrollView>
+                    <TextInput type="senha"
+                    placeholder="        Digite sua senha ..."
+                    placeholderTextColor="#999"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    name="Password"
+                    onChangeText={setPassword}
+                    secureTextEntry={true} 
+                    />
+                     <ButtonIcons>
+                        <AntDesign name="lock"  size={25} color="#820606"/>
+                    </ButtonIcons>
+                    <ButtonNavigation onPress={navigationToMenu}>
+                        <TitleButton>LOGIN</TitleButton>
+                    </ButtonNavigation>
+                    
+                </Form>
+                <Title onPress={()=> navigation.navigate('Password')}> Esqueci minha senha</Title>
+                <SubTitle onPress={()=> navigation.navigate('Sign_up')}>CADASTRE-SE</SubTitle>
+                </KeyboardAvoidingView>
+            </ContainerScroll>
+
         </LinearGradient>
     )
 }

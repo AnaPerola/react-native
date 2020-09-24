@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
-import {KeyboardAvoidingView, Form, Image, Title, Label, TextInput,
-        Button, TextButton} from './../../components/Styles_Sign_up'
+import {KeyboardAvoidingView, Form, Image, Title,TextInput,SubTitle,
+        Button, TextButton, ContainerScroll} from './../../components/Styles_Sign_up'
+
 import { LinearGradient } from 'expo-linear-gradient';
 
 import user from './../../assets/user.png';
@@ -23,80 +23,82 @@ export default function Sign_up({navigation}) {
     return ( 
         <LinearGradient colors={['#820606','#280101']}
         style={{flex:1, justifyContent: 'center', alignItems:'center'}}>
-            <KeyboardAvoidingView behavior='height'>
-                <ScrollView style={{  backgroundColor:'gray'}}>
-                    <Image source={user}/>
-                    <Title>* PREENCHA OS DADOS ABAIXO: *</Title>
-                    <Form>
-                        <Label >NOME COMPLETO *</Label>
+            <ContainerScroll>
+                <KeyboardAvoidingView behavior='height'>
+                <Image source={user}/>
+                <Title>* PREENCHA OS DADOS ABAIXO: *</Title>
+                   <Form>
+                       <SubTitle>Digite seu nome completo: </SubTitle>
                         <TextInput
-                            placeholder="Digite o nome completo"
+                            placeholder="Nome Completo"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="userName"
-                            onChangeText={setUserName}></TextInput>
-
-                        <Label >E-MAIL*</Label>
+                            onChangeText={setUserName}
+                        />
+                        <SubTitle>Digite seu melhor email: </SubTitle>
                         <TextInput type="email"
-                            placeholder="Digite o seu melhor E-mail ..."
+                            placeholder="email@example.com"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="email"
-                            onChangeText={setEmail}></TextInput>
-
-                        <Label >SENHA*</Label>
+                            onChangeText={setEmail}
+                        />
+                        <SubTitle>Digite sua melhor senha </SubTitle>
                         <TextInput 
-                            placeholder="Digite sua melhor senha ..."
-                            placeholderTextColor="#999"
-                            autoCapitalize="none"
-                            autoCorrect={false}
-                            name="password"
-                            onChangeText={setPassword}></TextInput>
-
-                        <Label >CPF *</Label>
+                                placeholder="Senha"
+                                placeholderTextColor="#999"
+                                autoCapitalize="none"
+                                autoCorrect={false}
+                                name="password"
+                                onChangeText={setPassword}
+                        />
+                        <SubTitle>Digite seu CPF</SubTitle>
                         <TextInput 
-                            placeholder="Digite seu CPF ..."
+                            placeholder="CPF"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="cpf"
-                            onChangeText={setcpf}></TextInput>
-
-                        <Label >GÊNERO*</Label>
+                            onChangeText={setcpf}
+                        />
+                        <SubTitle>*Escolha seu Gênero*</SubTitle>
                         <TextInput 
                             placeholder="Feminino/Masculino"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="sexo"
-                            onChangeText={setSexo}></TextInput>
-
-                        <Label >TELEFONE*</Label>
+                            onChangeText={setSexo}
+                        />
+                        <SubTitle>Digite sua melhor número para contato</SubTitle>
                         <TextInput 
-                            placeholder="Digite seu Número ..."
+                            placeholder="(   ) 00000-0000"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="phone"
-                            onChangeText={setPhone}></TextInput>
-                        <Label>NASCIMENTO*</Label>
+                            onChangeText={setPhone}
+                        />
+                        <SubTitle>Digite a data do seu aniversário</SubTitle>
                         <TextInput 
-                            placeholder="XX/XX/XXXX..."
+                            placeholder="00/00/0000"
                             placeholderTextColor="#999"
                             autoCapitalize="none"
                             autoCorrect={false}
                             name="birthday"
-                            onChangeText={setBirthday}></TextInput>
-                        </Form>
-                </ScrollView> 
+                            onChangeText={setBirthday}
+                        />
                         <Button onPress={handleSubmit}>
                             <TextButton>
                                 CADASTRAR
                             </TextButton>
                         </Button>
-            </KeyboardAvoidingView>
+                   </Form> 
+                </KeyboardAvoidingView>
+            </ContainerScroll>
         </LinearGradient>
     )
 

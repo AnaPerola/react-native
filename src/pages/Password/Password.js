@@ -27,7 +27,7 @@ export default function Password(){
                     <Title>Enviaremos um e-mail com mais informações para {"\n"}
                         Redefinir sua senha</Title>
                     <Form>
-                        <SubTitle>E-MAIL *</SubTitle>
+                        <SubTitle>Digite o e-mail cadastrado: </SubTitle>
                         <TextInput type="text"
                         placeholder="email@example.com"
                         placeholderTextColor="#999"

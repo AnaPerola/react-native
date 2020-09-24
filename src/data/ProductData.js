@@ -28,7 +28,7 @@ export const productData = [
         text:'Iscas de tilápia à milanesa com molho de limão',
         price:'25',
         categoryId:2,
-        id:3,
+        id:4,
         img: 'https://i.pinimg.com/564x/32/26/8e/32268e6a37d12e3a358232a838969338.jpg',
     }, 
     {
@@ -36,7 +36,7 @@ export const productData = [
         text:'Porções de batata frita que você precisa experimentar',
         price:'20',
         categoryId:2,
-        id:4,
+        id:5,
         img: 'https://i.pinimg.com/564x/06/75/5c/06755cb6bdcd73e18930fcda3a9eca4a.jpg'
     },   
     {
@@ -44,7 +44,7 @@ export const productData = [
         text:'Feito com bacalhau fresco',
         price:'10',
         categoryId:1,
-        id:5,
+        id:6,
         img: 'https://i.pinimg.com/564x/09/61/5f/09615f101441cbb1d9075ebfe464ad31.jpg'
     },
     {
@@ -52,7 +52,7 @@ export const productData = [
         text:'Pão, maionese verde, Rucula, Baicon, hamburguer artesanal',
         price:'15',
         categoryId:3,
-        id:6,
+        id:7,
         img: 'https://i.pinimg.com/564x/77/85/c7/7785c70698109b436a23fe683de72419.jpg'
     },  
     {
@@ -60,7 +60,7 @@ export const productData = [
         text:'2 pães sírios, maionese, alface picada, tomate, rosbife, ovo, ...',
         price:'10',
         categoryId:3,
-        id:7,
+        id:8,
         img: 'https://i.pinimg.com/564x/6d/c8/87/6dc887fb056c39f6d0397f545b7499a5.jpg'
     }, 
     {
@@ -68,7 +68,7 @@ export const productData = [
         text:'Pão sirio, Filé mignon, cebola, alfae, tomate e queijo',
         price:'15',
         categoryId:3,
-        id:8,
+        id:9,
         img: 'https://i.pinimg.com/564x/4a/e1/64/4ae164951cdc26bdc6b1c073f1b384ec.jpg'
     }, 
     {
@@ -76,7 +76,7 @@ export const productData = [
         text:'Pão de leite, hamburguer artesanal 180g, queijo cheeder',
         price:'15',
         categoryId:3,
-        id:9,
+        id:10,
         img: 'https://i.pinimg.com/564x/6b/a9/35/6ba9356fab983ba7cf8010187dbf696b.jpg'
     },     
 ];

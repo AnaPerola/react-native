@@ -10,51 +10,53 @@ export const KeyboardAvoidingView = styled.KeyboardAvoidingView`
     margin-top:-90px;
     
 `;
+
 export const ImageProfile = styled.Image`    
     margin-top:-50px;
     left:-5px;
 `;
+
 export const Title = styled.Text`
     font-Weight: bold;
     color: #FFF;
     margin-bottom: -40px;
     font-size: 16px;
-    text-align:center;
-
+    text-align:center;  
     top:22px;
 `;
-export const SubTitle = styled.Text`
-    font-Weight: bold;
-    color: #FFF;
-    left:-130px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    top:-15px;
+
+export const Form = styled.View`    
+    justify-content:center;
+    align-items:center;
+    width:95%;
+    height:150px;
+    background-color: rgba(500,500,400,0.5);
+    border-radius:9px;
+    top:70px;
+
 `;
+
+export const SubTitle = styled.Text`
+    color: #FFF;
+    font-size: 18px;
+    top:-28px;
+    left:-78px; 
+`;
+
 export const TextInput = styled.TextInput`
     background: #FFF;
-    width:90%;
-    margin-bottom: 15px;
+    width:95%;
     color: #222;
     font-size: 17px;
     border-radius: 9px;
     padding: 10px;
-    top:-23px;   
+    top:-25px;   
 `;
-export const Form = styled.View`    
-justify-content:center;
-align-items:center;
-width:370px;
-height:250px;
-background-color: rgba(500,500,400,0.5);
-border-radius:9px;
-top:70px;
-left:-5px;
-`;
+
 export const Button = styled.TouchableOpacity`
-    top:185px;
+    top:95px;
     background-color: #115037;
-    width:333px;
+    width:95%;
     align-items:center;
     justify-content:center;
     padding: 10px;
@@ -62,8 +64,9 @@ export const Button = styled.TouchableOpacity`
     position:absolute; 
 
 `;
+
 export const TitleButton = styled.Text`
     color: #FFF;
-    font-size: 22px; 
+    font-size: 20px; 
     font-weight: bold;
 `;

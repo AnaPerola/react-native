@@ -10,7 +10,7 @@ export const KeyboardAvoidingView = styled.KeyboardAvoidingView`
 
 export const Form = styled.View`
     width:95%;
-    height:470px;
+    height:450px;
     background-color: rgba(500,500,400,0.5);
     border-radius:10px;
     margin-top:2px;
@@ -52,15 +52,3 @@ export const TitleDescription = styled.Text`
 
 `;
 
-export const TitleTest = styled.Text`
-    font-size:35px;
-    color:white;
-`;
-
-export const ButtonTest = styled.TouchableOpacity`
-    background-color: #115037;
-
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-`;

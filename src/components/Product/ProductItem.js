@@ -1,7 +1,7 @@
 import React from 'react';
-import {Container, Banner, Title, Description, TitlePrice, Button, TitleButton} 
+import {Container, Banner, Title, Description, Price, Button, TitleButton} 
       from '../Styles_ProductItem';
-import { FontAwesome } from '@expo/vector-icons'; 
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 export default function ProductItem({item}){
     return(
@@ -9,7 +9,10 @@ export default function ProductItem({item}){
             <Banner source={{uri:`${item.img}`}}/>
             <Title>{item.title}</Title>
             <Description>{item.text}</Description> 
-            {/*<TitlePrice>{item.price}</TitlePrice>*/}                   
+            <Price>{`R$${item.price},00/und.`}</Price>
+            <Button onPress={()=>NavigationContainer.navigate('order')}>
+                <TitleButton>Adicionar</TitleButton>
+            </Button>                 
         </Container>
     )
 }
