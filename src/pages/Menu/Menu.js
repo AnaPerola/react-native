@@ -1,7 +1,8 @@
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 import {KeyboardAvoidingView, Button, TextInput, Scroll, ContainerInput, Form,
-    TitleDescription} from './../../components/Styles_Menu';
+    TitleDescription} from '../../components/Styles/Styles_Menu/Styles_Menu';
+    
 import { FontAwesome } from '@expo/vector-icons'; 
 
 import Carousel from './../../components/Carousel/Carousels';
@@ -33,6 +34,7 @@ export default function Menu({ navigation }){
                         Destaques do Dia: 
                     </TitleDescription>
                     <Product data={productData}/>
+                    
                 </Form>
             </KeyboardAvoidingView>
         </Scroll>

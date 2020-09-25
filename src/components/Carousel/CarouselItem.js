@@ -1,6 +1,6 @@
 import React from 'react';
 import {Banner, Title, SubTitle, ContainerCarousel, ButtonCarousel} 
-    from '../Styles_CarouselItem';
+    from '../Styles/Styles_Carousel/Styles_CarouselItem';
 
 export default function CarouselItem({item}){
 

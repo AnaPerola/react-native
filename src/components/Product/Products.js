@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ContainerList, ContainerScroll} from '../Styles_Product';
+import {ContainerList, ContainerScroll} from '../Styles/Styles_Product/Styles_Product';
 
 import ProductItem from './ProductItem';
 

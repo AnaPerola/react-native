@@ -1,7 +1,8 @@
 import React, {useState, useRef} from 'react';
 import {ContainerScroll,Container,ContainerBackground, ImagBackground, 
-    } from '../Styles_Carousel';
+    } from '../Styles/Styles_Carousel/Styles_Carousel';
 import Carousel from 'react-native-snap-carousel';
+
 import CarouselItem from './CarouselItem';
 
 

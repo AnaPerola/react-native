@@ -4,7 +4,8 @@ import {Alert} from 'react-native';
 import { MaterialIcons , AntDesign} from '@expo/vector-icons'; 
 
 import {ContainerScroll, ButtonIcon, ButtonIcons,KeyboardAvoidingView, ImageProfile, TextInput, 
-    ButtonNavigation, TitleButton, SubTitle, Title, Form} from '../../components/Styles_Login';
+        ButtonNavigation, TitleButton, SubTitle, Title, Form} 
+        from '../../components/Styles/Styles_Login/Styles_Login';
 
 import user from './../../assets/user.png';
 
@@ -22,7 +23,6 @@ export default function Login({ navigation }){
             Alert.alert("ERRO", "Email ou Senha Invalidos!");
         }
     }
-
 
     return (
         <LinearGradient colors={['#820606','#280101']}

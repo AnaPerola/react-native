@@ -1,5 +1,5 @@
 import React from 'react';
-import {Title, Container, ContainerImage, AvatarImage, Caption, ContainerSection, ContainerHearder} from '../Styles_Drawer';
+import {Title, Container, ContainerImage, AvatarImage, Caption, ContainerSection, ContainerHearder} from '../Styles/Styles_Drawer/Styles_Drawer';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {DrawerItem,DrawerContentScrollView} from '@react-navigation/drawer';
 

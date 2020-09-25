@@ -1,6 +1,7 @@
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import {Container, Image , TouchableOpacity, TitleButton} from './../../components/Styles_Index';
+import {Container, Image , TouchableOpacity, TitleButton} 
+    from '../../components/Styles/Styles_Index/Styles_Index';
 
 import logo from './../../assets/logo.png';
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {KeyboardAvoidingView, Form, Image, Title,TextInput,SubTitle,
-        Button, TextButton, ContainerScroll} from './../../components/Styles_Sign_up'
+        Button, TextButton, ContainerScroll} from '../../components/Styles/Styles_Sign_up/Styles_Sign_up'
 
 import { LinearGradient } from 'expo-linear-gradient';
 

@@ -14,8 +14,8 @@ export default function LoginStacks() {
     return (
         <Stack.Navigator initialRouteName={Login} screenOptions={{headerStyle: 
             {backgroundColor: '#820606'}, headerTintColor:'#FFF', headerTitleAlign:'center'}}>
-            <Stack.Screen name="Login" component={Login} options={{ title: 'Faça seu Login' }}/>
-            <Stack.Screen name="Menu" component={Drawers}options={{ title: 'Menu', headerLeft:false}}/>
+            <Stack.Screen name="Login" component={Login} options={{title: 'Faça seu Login'}}/>
+            <Stack.Screen name="Menu" component={Drawers} options={{ title: '',headerLeft:false}}/>
             <Stack.Screen name="Password" component={Password}options={{ title: 'REDEFINIR SENHA' }}/>
             <Stack.Screen name="Sign_up" component={Sign_up}options={{ title: 'CADASTRE'}}/>
         </Stack.Navigator>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Container } from '../../components/Styles/Styles_Order/Styles_Order';
 
-// import { Container } from './styles';
+export default function Recent({ navigation }) {
+  return (
+    <Container>
 
-const Recent = () => {
-  return <View />;
+    </Container>
+  )
 }
-
-export default Recent;
